@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report</title>
+  <meta charset="utf-8">
+
+  <link rel="icon" href="https://drive.google.com/thumbnail?id=1ooDopkuuihsu7G-08zRzW4Es_iPHIEtP">
+
+  <style>
+    html,body{height:100%;margin:0}
+    #app{position:fixed;inset:0;border:0;width:100%;height:100%}
+  </style>
+</head>
+<body>
+
+  <iframe id="app" allowfullscreen="true" referrerpolicy="no-referrer"></iframe>
+
+  <script>
+    const APP_URL =
+      "https://script.google.com/macros/s/AKfycbyo9uDMxCaJkpw7_q5A2zYeYqPgyHXfy_YV2h4JO4s9SEiRGGV9eoBDZj7sy8jkgE41/exec";
+
+    const f = document.getElementById("app");
+    f.src = APP_URL;
+
+    window.onload = function () {
+      f.requestFullscreen().catch(() => {});
+    };
+  </script>
+
+</body>
+</html>
 
